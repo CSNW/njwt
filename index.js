@@ -479,7 +479,8 @@ var jwtLib = {
     }
     jwt.setExpiration((nowEpochSeconds() + (60*60))*1000); // one hour
     return jwt;
-  }
+  },
+  Parser: Parser
 };
 
 module.exports = jwtLib;
